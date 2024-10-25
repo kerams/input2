@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Projektanker.Icons.Avalonia.MaterialDesign" Version="9.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Material.Avalonia">
+      <HintPath>..\..\Material.Avalonia\Material.Avalonia\bin\Release\net8.0\Material.Avalonia.dll</HintPath>
+    </Reference>
+    <Reference Include="Material.Colors">
+      <HintPath>..\..\Material.Avalonia\Material.Avalonia\bin\Release\net8.0\Material.Colors.dll</HintPath>
+    </Reference>
+    <Reference Include="Material.Ripple">
+      <HintPath>..\..\Material.Avalonia\Material.Avalonia\bin\Release\net8.0\Material.Ripple.dll</HintPath>
+    </Reference>
+    <Reference Include="Material.Styles">
+      <HintPath>..\..\Material.Avalonia\Material.Avalonia\bin\Release\net8.0\Material.Styles.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
